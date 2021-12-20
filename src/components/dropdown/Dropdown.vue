@@ -438,13 +438,13 @@ export default {
             ZIndexUtils.set('overlay', el, this.$primevue.config.zIndex.overlay);
             this.alignOverlay();
             this.bindOutsideClickListener();
-            this.bindScrollListener();
-            this.bindResizeListener();
+            //this.bindScrollListener();
+            //this.bindResizeListener();
             this.scrollValueInView();
 
-            if (this.filter) {
-                this.$refs.filterInput.focus();
-            }
+            //if (this.filter) {
+            //    this.$refs.filterInput.focus();
+            //}
 
             if (!this.virtualScrollerDisabled) {
                 const selectedIndex = this.getSelectedOptionIndex();
